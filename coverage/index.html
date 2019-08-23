@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-08-23T15:29:15-07:00">2019-08-23T15:29:15-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-08-23T15:41:08-07:00">2019-08-23T15:41:08-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -273,7 +273,7 @@
       <tr>
         <td class="strong"><a href="#b9a8fb1d7a1c6ee6219ad52e1b65b88a03c54b0a" class="src_link" title="spec/requests/get_businesses_spec.rb">spec/requests/get_businesses_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>20</td>
+        <td>19</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -2793,7 +2793,7 @@
         <li class="never" data-hits="" data-linenumber="4">
           
           
-          <code class="ruby">#   let!(:businesses) { FactoryBot.create_list(:business, 20)}</code>
+          <code class="ruby">#   let!(:locations) { FactoryBot.create_list(:business, 20)}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -2805,88 +2805,82 @@
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">#   before { get &#39;/locations/location_id/businesses&#39;}</code>
+          <code class="ruby">#   before { get &quot;/locations/#{location.id}/businesses&quot;}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">#   &quot;/locations/#{location.id}&quot;</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">#   it &#39;returns all businesses&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">#   it &#39;returns all businesses&#39; do</code>
+          <code class="ruby">#     expect(JSON.parse(response.body).size).to eq(20)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">#     expect(JSON.parse(response.body).size).to eq(20)</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">#   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">#   end</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">#   it &#39;returns status code 200&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">#   it &#39;returns status code 200&#39; do</code>
+          <code class="ruby">#     expect(response).to have_http_status(:success)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">#     expect(response).to have_http_status(:success)</code>
+          <code class="ruby">#   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">#   end</code>
+          <code class="ruby">#   it &quot;returns all businesses&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">#   it &quot;returns all businesses&quot; do</code>
+          <code class="ruby">#     expect(JSON.parse(response.body).size).to eq(Business.count)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">#     expect(JSON.parse(response.body).size).to eq(Business.count)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
           <code class="ruby">#   end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby"># end</code>

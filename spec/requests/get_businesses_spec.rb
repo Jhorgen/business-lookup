@@ -1,10 +1,9 @@
 # require "rails_helper"
 #
 # describe "get all businesses route", :type => :request do
-#   let!(:businesses) { FactoryBot.create_list(:business, 20)}
+#   let!(:locations) { FactoryBot.create_list(:business, 20)}
 #
-#   before { get '/locations/location_id/businesses'}
-#   "/locations/#{location.id}"
+#   before { get "/locations/#{location.id}/businesses"}
 #
 #   it 'returns all businesses' do
 #     expect(JSON.parse(response.body).size).to eq(20)
