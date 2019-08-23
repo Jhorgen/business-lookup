@@ -19,7 +19,10 @@ end
 def update
   @location = Location.find(params[:location_id])
   @business = Business.find(params[:id])
-  if @location.businesss.update(business_params)
+  if @location.businesss.update!(business_params)
+    render status: 200, json: {
+      message: "This business has been updated successfully."
+    }
 
   end
 end

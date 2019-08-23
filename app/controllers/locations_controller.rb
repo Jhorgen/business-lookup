@@ -17,7 +17,10 @@ class LocationsController < ApplicationController
 
   def update
     @location = Location.find(params[:id])
-    if @location.update(location_params)
+    if @location.update!(location_params)
+      render status: 200, json: {
+        message: "This location has been updated successfully."
+      }
 
     end
   end

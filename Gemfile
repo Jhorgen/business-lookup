@@ -23,6 +23,7 @@ gem 'puma', '~> 3.11'
 # gem 'capistrano-rails', group: :development
 
 gem 'faker'
+gem 'shoulda-matchers'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -36,6 +37,12 @@ group :development, :test do
 end
 
 group :development do
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem "factory_bot_rails"
+  gem 'simplecov', require: false
 end
 
 
