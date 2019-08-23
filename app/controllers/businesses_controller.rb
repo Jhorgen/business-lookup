@@ -1,7 +1,8 @@
+class BusinessesController < ApplicationController
 def index
   @location = Location.find(params[:location_id])
-  @businesss = @location.businesss.all
-  json_response(@businesss)
+  @businesses = @location.businesses.all
+  json_response(@businesses)
 end
 
 def show
@@ -12,14 +13,14 @@ end
 
 def create
   @location = Location.find(params[:location_id])
-  @destinaton.businesss.create!(business_params)
+  @destinaton.businesses.create!(business_params)
   json_response(@business)
 end
 
 def update
   @location = Location.find(params[:location_id])
   @business = Business.find(params[:id])
-  if @location.businesss.update!(business_params)
+  if @location.businesses.update!(business_params)
     render status: 200, json: {
       message: "This business has been updated successfully."
     }
@@ -36,10 +37,13 @@ def destroy
 end
 
 private
+
 def json_response(object, status = :ok)
 render json: object, status: status
 end
 
 def business_params
-  params.permit(:business, :name, :business_catagory)
+  params.permit(:name, :business_catagory, :text_body)
+end
+
 end
