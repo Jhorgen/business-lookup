@@ -15,6 +15,8 @@ By _Josh Horgen, 2019_
 #### Step 7: Type "rake db:seed" to populate the database.
 #### Step 7: Type "rails s" to run the server.
 
+### Next, you will need to install Postman to handle the API requests. Download here: https://www.getpostman.com/
+
 #### Step 8: Postman handles the API, so type http://localhost:3000/locations into the input bar.
 #### Step 9: Run a GET request, you should see a list of locations.
 #### Final step: Play with the API by navigating to http://localhost:3000/locations/"ID GOES HERE"/businesses. Or, view an individual location with http://localhost:3000/locations/"ID GOES HERE".
