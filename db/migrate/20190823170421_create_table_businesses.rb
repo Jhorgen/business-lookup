@@ -4,7 +4,7 @@ class CreateTableBusinesses < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :business_catagory
       t.text :text_body
-      t.belongs_to :location, foreign_key: true
+      t.belongs_to :locations, foreign_key: true
     end
   end
 end
