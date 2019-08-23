@@ -32,6 +32,11 @@ class LocationsController < ApplicationController
     end
   end
 
+  def randomize
+ @location = Location.random
+ json_response(@location)
+  end
+
   private
   def location_params
     params.permit(:city, :state)
