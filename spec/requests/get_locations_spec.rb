@@ -12,4 +12,7 @@ describe "get all locations route", :type => :request do
   it 'returns status code 200' do
     expect(response).to have_http_status(:success)
   end
+  it "returns all locations" do
+    expect(JSON.parse(response.body).size).to eq(Location.count)
+  end
 end

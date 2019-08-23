@@ -1,8 +1,9 @@
 FactoryBot.define do
 
 factory :business do
-  name { Faker::Movies::HarryPotter.character }
-  text_body { Faker::Movies::HarryPotter.spell }
+  name { Faker::Company.name }
+  business_catagory { Faker::Company.industry }
+  text_body { Faker::Company.catch_phrase }
   location
 end
 
