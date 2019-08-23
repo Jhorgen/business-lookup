@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2019_08_23_170421) do
     t.string "name"
     t.string "business_catagory"
     t.text "text_body"
-    t.bigint "locations_id"
-    t.index ["locations_id"], name: "index_businesses_on_locations_id"
+    t.bigint "location_id"
+    t.index ["location_id"], name: "index_businesses_on_location_id"
   end
 
   create_table "locations", force: :cascade do |t|
@@ -28,10 +28,5 @@ ActiveRecord::Schema.define(version: 2019_08_23_170421) do
     t.string "state"
   end
 
-  create_table "table_locations", force: :cascade do |t|
-    t.string "city"
-    t.string "state"
-  end
-
-  add_foreign_key "businesses", "locations", column: "locations_id"
+  add_foreign_key "businesses", "locations"
 end
