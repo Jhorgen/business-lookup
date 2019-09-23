@@ -322,6 +322,12 @@
         null,
         1,
         1,
+        null,
+        1,
+        0,
+        null,
+        1,
+        1,
         null
       ],
       "C:/Users/Joshh/Desktop/business_lookup/spec/requests/get_businesses_spec.rb": [
@@ -415,6 +421,11 @@
         null,
         null,
         1,
+        0,
+        0,
+        null,
+        null,
+        1,
         1,
         0,
         null,
@@ -440,6 +451,6 @@
         null
       ]
     },
-    "timestamp": 1566600068
+    "timestamp": 1566671115
   }
 }
