@@ -1,19 +1,23 @@
 class Seed
+
   def self.begin
     Location.destroy_all
     Business.destroy_all
+    Location.reset_pk_sequence
+    Business.reset_pk_sequence
+
     seed = Seed.new
     seed.generate_locations
   end
 
   def generate_locations
-    50.times do |i|
+    10.times do |i|
       location = Location.create!(
         city: Faker::Address.city,
         state: Faker::Address.state
       )
       puts "Location #{i}: City is #{location.city} and state is #{location.state}."
-        50.times do |x|
+      10.times do |x|
         business = location.businesses.create!(
           name: Faker::Company.name,
           business_catagory: Faker::Company.industry,
