@@ -3,10 +3,10 @@
 Demonstrates GET functionality & routing with a Ruby on Rails API. The database is designed to store any number of businesses with a single location.
 
 The location
-![](location.png)
+![](assets/location.png)
 
 The business at that location (by location_id)
-![](business.png)
+![](assets/business.png)
 
 
 * Ruby version 2.5.5 (For Windows users)
