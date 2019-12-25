@@ -2,38 +2,59 @@
 
 Demonstrates GET functionality & routing with a Ruby on Rails API. The database is designed to store any number of businesses with a single location.
 
-The location
+The location<br/><br/>
 ![](assets/location.png)
 
-The business at that location (by location_id)
+The business at that location (by location_id)<br/><br/>
 ![](assets/business.png)
 
-
+<br/>
 * Ruby version 2.5.5 (For Windows users)
 * Ruby version 2.5.1 (For Mac users)
 
-## _Setup/Installation Requirements_
-#### Step 1: Visit https://github.com/Jhorgen/business_lookup
-#### Step 2: Click the green "Clone or Download" button and copy the link.
-#### Step 3: Open Git Bash or command line and use the command: "git clone _____URL_____ (the link provided above)."
-#### Step 4: Open and type "bundle install".
-#### Step 5: Create a database by typing "rails db:create".
-#### Step 6: Type "rails db:migrate" to finish creating the database.
-#### Step 7: Type "rails db:seed" to populate the database.
-#### Step 7: Type "rails s" to run the server.
 
-### Next, you will need to install Postman to handle the API requests. Download here: https://www.getpostman.com/
+### Setup & Deployment
 
-#### Step 8: Postman handles the API, so type http://localhost:3000/locations into the input bar.
-#### Step 9: Run a GET request, you should see a list of locations.
-#### Final step: Play with the API by navigating to http://localhost:3000/locations/"ID GOES HERE"/businesses. Or, view an individual location with http://localhost:3000/locations/"ID GOES HERE".
+To test or run on your machine, follow the step-by-step instructions provided below.
 
+```
 
-### _Languages, frameworks, libraries, etc!_
+Open and type "bundle install".
 
-* _Ruby_
-* _Ruby on Rails_
-* _Postgres_
+Create a database by typing "rails db:create".
 
-#### License
-_Open source (c) 2019 **Josh Horgen**_
+"rails db:migrate" to finish creating the database.
+
+"rails db:seed" to populate the database.
+
+"rails s" to run the server.
+
+```
+
+### Next, you need to install Postman to handle the API requests. Download here: https://www.getpostman.com/
+
+```
+
+Postman handles the API, so type http://localhost:3000/locations into the input bar.
+
+Run a GET request, you should see a list of locations.
+
+Experiment with the API by navigating to http://localhost:3000/locations/"ID GOES HERE"/businesses. Or, view an individual location with http://localhost:3000/locations/"ID GOES HERE".
+
+```
+
+## Built With
+
+* [Ruby](https://www.ruby-lang.org/en/)
+* [Ruby on Rails](https://rubyonrails.org/)
+* [PostgreSQL](https://www.postgresql.org/)
+
+## Authors
+
+* **Josh Horgen**
+
+## License
+
+Open source (c) 2019 Josh Horgen
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
