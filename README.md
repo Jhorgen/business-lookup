@@ -1,6 +1,13 @@
-# _Independent Project 11 : **Business Lookup API**_
+# _Business Lookup API_
 
-By _Josh Horgen, 2019_
+Demonstrates GET functionality & routing with a Ruby on Rails API. The database is designed to store any number of businesses with a single location.
+
+The location
+![](location.png)
+
+The business at that location (by location_id)
+![](business.png)
+
 
 * Ruby version 2.5.5 (For Windows users)
 * Ruby version 2.5.1 (For Mac users)
@@ -20,10 +27,6 @@ By _Josh Horgen, 2019_
 #### Step 8: Postman handles the API, so type http://localhost:3000/locations into the input bar.
 #### Step 9: Run a GET request, you should see a list of locations.
 #### Final step: Play with the API by navigating to http://localhost:3000/locations/"ID GOES HERE"/businesses. Or, view an individual location with http://localhost:3000/locations/"ID GOES HERE".
-
-
-## _Description_
-This program was written with Ruby on Rails and PostgreSQL. The goal of this project was to create an API & test API calls through a Rails application.
 
 
 ### _Languages, frameworks, libraries, etc!_
