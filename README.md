@@ -11,8 +11,8 @@ By _Josh Horgen, 2019_
 #### Step 3: Open Git Bash or command line and use the command: "git clone _____URL_____ (the link provided above)."
 #### Step 4: Open and type "bundle install".
 #### Step 5: Create a database by typing "rails db:create".
-#### Step 6: Type "rake db:migrate" to finish creating the database.
-#### Step 7: Type "rake db:seed" to populate the database.
+#### Step 6: Type "rails db:migrate" to finish creating the database.
+#### Step 7: Type "rails db:seed" to populate the database.
 #### Step 7: Type "rails s" to run the server.
 
 ### Next, you will need to install Postman to handle the API requests. Download here: https://www.getpostman.com/
