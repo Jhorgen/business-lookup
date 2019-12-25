@@ -9,9 +9,6 @@ The business at that location (by location_id)<br/><br/>
 ![](assets/business.png)
 
 <br/>
-* Ruby version 2.5.5 (For Windows users)
-* Ruby version 2.5.1 (For Mac users)
-
 
 ### Setup & Deployment
 
@@ -31,7 +28,9 @@ Create a database by typing "rails db:create".
 
 ```
 
-### Next, you need to install Postman to handle the API requests. Download here: https://www.getpostman.com/
+### Next, you need to install Postman to handle the API requests. 
+
+#### Download here: https://www.getpostman.com/
 
 ```
 
